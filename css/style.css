@@ -1,0 +1,541 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: black;
+}
+.box_1{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/pain_dark_2_by_dinocozero_d7vhwus-fullview.jpg);
+    background-size: cover;
+    background-position: center;
+}
+img{
+    position: absolute;
+    width: 200px;  
+    margin-top: -35px;
+    margin-left: 10px;
+}
+.container{
+    padding: 20px 10%;  
+}
+.nav_mobile_input{
+   display: none;
+}
+.nav_mobile_input:checked ~ .nav_cover{ 
+    display: block;/*check vào lớp cover thì lớp cover mất*/
+}
+.nav_mobile{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    max-width: 100%;
+    background-color: aliceblue;
+    margin-right: 0; 
+   transform: translateX(100%);
+   background-color: black;
+    
+}
+
+.nav_mobile_list{   
+    margin-top: 60px;
+    margin-left: 30px;
+    height: 100vh;     
+    justify-content: center; 
+    line-height: 60px; 
+}
+.nav_mobile_link{
+    font-size: 35px;
+    text-decoration: none;
+    color: black;
+}
+.nav_cover{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(133, 133, 133, 0.3);
+    display: none;
+}
+
+/*.nav_mobile_off{
+    position:absolute;
+    width: 30px;
+    height: 30px;
+    font-size: 40px;
+    top: 0;
+    right: 5px;   
+}*/
+.bars{
+    width: 20px;
+    height: 20px;
+    color: aliceblue;
+    display: none;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 600px;
+    margin-top: 10px;
+    
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    font-size: 25px;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    
+}
+/*nav ul li a::after{
+    content: "";                  (bị lỗi ko chạy chưa bt nguyên nhân)
+    width: 0;
+    height: 2px;
+    background-color: coral;
+    position: absolute;
+    left: 0px;
+    bottom: -5px;
+    transition: all 0.5s;
+   
+}
+nav ul li a:hover::after{
+    width: 100%;
+}*/
+.container_text{
+    position: absolute;  
+    margin-top: 20%;
+    color: white;
+}
+.container_text h1{ 
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 60px;
+}
+#text_color{
+    color: rgb(236, 127, 10);
+}
+#text_font-size{
+    font-size: 25px;
+    color: aliceblue;
+}
+/*=======================================================*/
+.about{ 
+    background-color: rgb(25, 21, 21);
+    padding: 20px 0px;
+}
+
+.container_row{
+    width: 100%;
+    height: 95vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about_col_1{
+    flex-basis: 30%;
+    width: 100%;
+    height: 48vh;
+    background-image: url(../img/297114713_572598767937155_5704618392327674575_000n.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+   
+}
+
+.about_col_2{
+    width: 100%;
+    height: 95vh;
+    flex-basis: 60%;
+    color: white;
+    overflow: hidden;
+}
+.about_col_2 h1{
+    color: rgb(236, 127, 10);
+   
+}
+.about_col_2 ul{
+    margin-top: 20px;
+    font-size: 25px;
+    
+}
+.about_col_2 ul li{
+    line-height: 35px;
+    margin-left: 25px;
+    
+}
+/*=================================================================*/
+.content{
+    width: 100%;
+    height: 100vh;
+    padding: 20px 0;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;    
+}
+
+.container_card{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;   
+}
+.container_card h1{
+    position: absolute;
+    text-align: center;
+    color: rgb(236, 127, 10);   
+}
+.card{
+    margin-top: 110px;
+    width: 22%;
+    height: 67vh;
+    background-color: rgb(55, 56, 58);
+    border-radius: 15px;
+    justify-content: center;  
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card h2{   
+    color: white;
+    text-align: center; 
+    font-size: 30px;
+}
+.card_text{
+    margin-top: 20px;
+    margin-left: 8%;
+    font-size: 20px;
+    color: white;
+    opacity: 0.8;
+}
+/*--------------------------------------------*/
+.contact{
+    width: 100%;
+    height: 30vh;
+    padding: 20px 0px;
+}
+.container_contact h1{
+    text-align: center;
+    color: aliceblue;
+}
+.contact_icons{
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: space-around; 
+    background-color: rgb(37, 31, 31);
+}
+#icon{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 2%;
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+}
+.contact_icons span{
+    font-size: 20px;
+    color: rgb(248, 131, 7);
+}
+
+/*===============================ipad================================*/
+
+@media only screen and (max-width: 1280px) {
+    .nav_mobile{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 300px;
+        max-width: 100%;
+        background-color: aliceblue;
+        margin-right: 0; 
+       /* display: none;*/
+       transform: translateX(100%);
+       transition: all 0.5s;
+        
+    }
+    .nav_mobile_list{   
+        margin-top: 60px;
+        margin-left: 30px;
+        height: 100vh;     
+        justify-content: center; 
+        line-height: 60px; 
+    }
+    .nav_mobile_link{
+        font-size: 35px;
+        text-decoration: none;
+        color: black;
+    }
+    .nav_mobile_input:checked ~ .nav_mobile{
+        transform: translateX(0);
+    }
+    .nav_mobile_off{
+        position:absolute;
+        width: 30px;
+        height: 30px;
+        font-size: 40px;
+        top: 0;
+        right: 5px;    
+    }
+    .box_1{ 
+        background-image: url(../img/pain.jpg);    
+    }
+    nav{
+        display: none;
+    }
+    .container img{
+        width: 300px;
+        margin-top:-50px;
+    }
+    .bars{
+        display: block; 
+        font-size: 40px;
+        margin-top: 25px;
+        margin-left: 100%;
+    } 
+    .container_text{
+        margin-top: 110%;
+    }
+    .about_col_1{
+        flex-basis: 60%;
+       margin-left: 20%;
+        height: 400px;
+    }
+    .about_col_2{
+        width: 100%;
+        height: 100vh;
+        flex-basis: 100%;
+        color: white;   
+    }
+    .about_col_2 h1{
+        text-align: center;
+        color: rgb(236, 127, 10);
+        margin-top: 20px;
+        font-size: 45px;     
+    }
+    .about_col_2 ul{
+        margin-top: 20px;
+        font-size: 28px;      
+    }
+    .about_col_2 ul li{
+        line-height: 40px;
+        margin-left: 25px;   
+    }
+/*--------------------------*/
+
+    .container_card{
+        width: 100%;
+        height: 70vh;
+        flex-wrap: wrap;
+        justify-content:space-evenly;   
+    }
+    .container_card h1{
+        position: absolute;
+        text-align: center;
+        color: rgb(236, 127, 10);   
+    }
+    .card{
+        /*margin-top: 110px;*/
+        width: 45%;
+        height: 50vh;
+        background-color: rgb(55, 56, 58);
+        border-radius: 15px;
+        justify-content: center;  
+        transition: all 0.5s;      
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }
+    .card h2{   
+        color: white;
+        text-align: center; 
+        font-size: 35px;
+    }
+    .card_text{
+        font-size: 20px;
+        color: white;
+        opacity: 0.8;
+        line-height: 30px;
+    }
+    /*----------------------------------------------*/
+
+    .contact{
+        width: 100%;
+        height: 20vh;
+        margin-top: 30%;   
+    }
+    .container_contact h1{
+        text-align: center;
+        color: aliceblue;
+    }
+    .contact_icons{
+        width: 100%;
+        height: 20vh;
+        display: inline-block;
+        justify-content: center;
+    }
+    #icon{
+        margin-top: 15px;
+        margin-left: 35%;
+        font-size: 25px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+        }
+/*=============================Phone=================================*/
+
+
+@media only screen and (max-width: 600px) {
+    .nav_mobile{
+    
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 200px;
+        max-width: 100%;
+        background-color: aliceblue;
+        margin-right: 0; 
+        z-index: 1;
+       
+        transform: translateX(100%);
+        transition: all 0.5s;
+           
+    }
+    
+    .nav_mobile_list{   
+        margin-top: 50px;
+        height: 100vh;
+        justify-content: center;  
+    }
+    .nav_mobile_link{
+        margin-top: 10px;
+        text-decoration: none;
+       font-size: 25px;
+        color: black;
+    }
+    .nav_mobile_input:checked ~ .nav_mobile{
+        transform: translateX(0%);
+     }
+    
+    /*-------------------------------------*/
+    .box_1{ 
+        background-image: url(../img/pain.jpg);    
+    }
+    .container_text{
+        margin-top: 135%;
+    }
+    .bars{
+        display: block; 
+        font-size: 30px;
+        margin-top: 30px;
+        margin-left: 100%;
+    }
+    .container_text h1{
+        font-size: 30px;
+        line-height: 50px;
+    }
+    #text_color{
+        color: rgb(236, 127, 10);
+    }
+    #text_font-size{
+        font-size: 20px;
+        color: aliceblue;
+    }
+    nav{
+        display: none;
+    }
+    .container img{
+       margin-top: -20px;
+       width: 200px;
+    }
+    /*-------------------------------------------*/
+    .about_col_1{
+        flex-basis: 70%;
+        margin-left: 15%;
+        height: 225px;
+        background-image: url(../img/297114713_572598767937155_5704618392327674575_000n.jpg);
+        border-radius: 50%;
+    }
+    .about_col_2{
+        flex-basis: 100%;
+        color: white;
+    }
+    .about_col_2 h1{
+        font-size: 28px;     
+    }
+    .about_col_2 ul{
+        margin-top: 20px;
+        font-size: 15px;     
+    }
+    .about_col_2 ul li{
+        line-height: 30px;
+        margin-left: 15px;    
+    }
+    /*----------------------------------*/  
+    .container_card h1{
+        position: absolute;
+        text-align: center;
+        color: rgb(236, 127, 10);        
+    }
+    .card{  
+        margin-top: 110px;
+        width: 75%;
+        height: 65vh;
+        justify-content: center;  
+        overflow: hidden;
+        transition: all 0.5s;
+    }
+    .card:hover{
+        transform: scale(1.1);
+    }  
+    .card h2{    
+        color: white;
+        text-align: center; 
+        font-size: 25px;
+        color: rgb(236, 127, 10);
+    }
+     .card_text{
+        margin-left: 8%;
+        font-size: 15px;
+        color: white;
+       
+    }
+/*--------------------------------*/
+    .contact{
+        margin-top: 460%;   
+    }
+    .container_contact h1{
+        text-align: center;
+        color: aliceblue;
+    }
+    .contact_icons{
+        width: 100%;
+        height: 25vh;
+        display: inline-block;
+        justify-content: center;
+    }
+    #icon{
+        margin-top: 15px;
+        margin-left: 26%;
+        font-size: 25px;
+        line-height: 20px;
+        text-decoration: none;
+    }
+
+}
